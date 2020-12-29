@@ -60,9 +60,7 @@ define((require) => {
 
 		/** @override */
 		async sendNowPlaying(song) {
-			const { sessionID } = await this.getSession();
-			const songData = this.makeTrackMetadata(song);
-			return this.sendRequest(songData, sessionID);
+			return true;
 		}
 
 		/** @override */
